@@ -138,6 +138,12 @@
         min-height: 200px;
       }
 
+      /* Fix: Constrain card width in demo sections */
+      .snippet-demo smart-card {
+        max-width: 350px;
+        width: 100%;
+      }
+
       .snippet-code {
         position: relative;
       }
@@ -235,6 +241,12 @@
         margin-bottom: 20px;
       }
 
+      /* Fix: Constrain card width in playground preview */
+      .playground-preview smart-card {
+        max-width: 400px;
+        width: 100%;
+      }
+
       .generated-code {
         background: #2c3e50;
         color: #ecf0f1;
@@ -292,6 +304,12 @@
 
         .intro h2 {
           font-size: 2rem;
+        }
+
+        /* Mobile: Allow cards to be slightly wider */
+        .snippet-demo smart-card,
+        .playground-preview smart-card {
+          max-width: 100%;
         }
       }
     </style>
