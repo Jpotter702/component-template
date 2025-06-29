@@ -159,4 +159,4 @@ This Web Component works in all modern browsers that support:
 
 With thanks to the following people:
 
-- [Zach Leatherman](https://zachleat.com) for inspiring this [Web Component repo template](https://github.com/daviddarnes/component-template)
+- [Zach Leatherman](https://zachleat.com) for inspiring this [Web Component repo template](https://github.com/zachleat/web-component-template)
