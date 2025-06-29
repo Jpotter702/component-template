@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "description": "A versatile, beautiful Web Component for creating interactive cards with multiple styles and features",
   "main": "smart-card.js",
+  "type": "module",
   "scripts": {
-    "start": "npx http-server .",
-    "dev": "npx http-server . -p 3000 -o"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "repository": {
     "type": "git",
@@ -37,6 +39,6 @@
   },
   "homepage": "https://github.com/daviddarnes/smart-card#readme",
   "devDependencies": {
-    "http-server": "^14.1.1"
+    "vite": "^5.0.0"
   }
 }
