@@ -1,0 +1,39 @@
+{
+  "name": "@your-username/component-name",
+  "version": "1.0.0",
+  "description": "A brief description of your component",
+  "main": "component-name.js",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/your-username/your-repo.git"
+  },
+  "keywords": [
+    "web",
+    "component",
+    "components",
+    "web components",
+    "custom elements"
+  ],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "bugs": {
+    "url": "https://github.com/your-username/your-repo/issues"
+  },
+  "author": {
+    "name": "Your Name",
+    "email": "your.email@example.com",
+    "url": "https://your-website.com/"
+  },
+  "homepage": "https://github.com/your-username/your-repo#readme",
+  "devDependencies": {
+    "vite": "^5.0.0"
+  }
+}
