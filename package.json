@@ -1,33 +1,42 @@
 {
-  "name": "@daviddarnes/component-name",
+  "name": "@daviddarnes/smart-card",
   "version": "1.0.0",
-  "description": "A Web Component for…",
-  "main": "component-name.js",
+  "description": "A versatile, beautiful Web Component for creating interactive cards with multiple styles and features",
+  "main": "smart-card.js",
   "scripts": {
-    "start": "npx http-server ."
+    "start": "npx http-server .",
+    "dev": "npx http-server . -p 3000 -o"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/daviddarnes/component-name.git"
+    "url": "git+https://github.com/daviddarnes/smart-card.git"
   },
   "keywords": [
     "web",
     "component",
     "components",
     "web components",
-    "custom elements"
+    "custom elements",
+    "card",
+    "ui",
+    "interface",
+    "responsive",
+    "interactive"
   ],
   "license": "MIT",
   "publishConfig": {
     "access": "public"
   },
   "bugs": {
-    "url": "https://github.com/daviddarnes/component-name/issues"
+    "url": "https://github.com/daviddarnes/smart-card/issues"
   },
   "author": {
     "name": "David Darnes",
     "email": "me@daviddarnes.com",
     "url": "https://darn.es/"
   },
-  "homepage": "https://github.com/daviddarnes/component-name#readme"
+  "homepage": "https://github.com/daviddarnes/smart-card#readme",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
 }

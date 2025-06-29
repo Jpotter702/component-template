@@ -3,37 +3,243 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Demo of component-name Web Component" />
-    <title>component-name Web Component Demo</title>
+    <meta name="description" content="Demo of Smart Card Web Component" />
+    <title>Smart Card Web Component Demo</title>
 
-    <script type="module" src="component-name.js"></script>
+    <script type="module" src="smart-card.js"></script>
+    
+    <style>
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 40px 20px;
+        background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        min-height: 100vh;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      h1 {
+        text-align: center;
+        color: #2c3e50;
+        margin-bottom: 10px;
+        font-size: 2.5rem;
+        font-weight: 700;
+      }
+
+      .subtitle {
+        text-align: center;
+        color: #7f8c8d;
+        margin-bottom: 50px;
+        font-size: 1.2rem;
+      }
+
+      h2 {
+        color: #34495e;
+        margin: 40px 0 20px 0;
+        font-size: 1.5rem;
+        font-weight: 600;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 24px;
+        margin-bottom: 40px;
+      }
+
+      .single-column {
+        max-width: 500px;
+        margin: 0 auto 40px auto;
+      }
+
+      .code-block {
+        background: #2c3e50;
+        color: #ecf0f1;
+        padding: 20px;
+        border-radius: 8px;
+        font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+        font-size: 14px;
+        overflow-x: auto;
+        margin: 20px 0;
+      }
+
+      .feature-list {
+        background: white;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+        margin: 30px 0;
+      }
+
+      .feature-list h3 {
+        color: #2c3e50;
+        margin-top: 0;
+      }
+
+      .feature-list ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      .feature-list li {
+        padding: 8px 0;
+        border-bottom: 1px solid #ecf0f1;
+      }
+
+      .feature-list li:last-child {
+        border-bottom: none;
+      }
+
+      .feature-list li::before {
+        content: '✓';
+        color: #27ae60;
+        font-weight: bold;
+        margin-right: 10px;
+      }
+
+      @media (max-width: 768px) {
+        .grid {
+          grid-template-columns: 1fr;
+        }
+        
+        h1 {
+          font-size: 2rem;
+        }
+        
+        body {
+          padding: 20px 15px;
+        }
+      }
+    </style>
   </head>
   <body>
-    <h2>General usage example</h2>
-    <component-name>
-      <button>Button</button>
-    </component-name>
-    <hr />
-    <h2>Example using a fallback method</h2>
-    <component-name>
-      <button>Button</button>
-      <a href="#">Anchor</a>
-    </component-name>
-    <style>
-      component-name:not(:defined) button,
-      component-name:defined a {
-        display: none;
-      }
-    </style>
-    <hr />
-    <h2>Example using options or additional fallback method</h2>
-    <component-name attribute="value">
-      <button>Button</button>
-    </component-name>
-    <style>
-      component-name[attribute="value"] {
-        outline: 1px solid red;
-      }
-    </style>
+    <div class="container">
+      <h1>Smart Card Web Component</h1>
+      <p class="subtitle">A versatile, beautiful card component with multiple styles and interactive features</p>
+
+      <div class="feature-list">
+        <h3>✨ Features</h3>
+        <ul>
+          <li>Multiple card types with beautiful gradients</li>
+          <li>Responsive design with mobile optimization</li>
+          <li>Smooth hover animations and micro-interactions</li>
+          <li>Configurable elevation shadows</li>
+          <li>Support for images, badges, and custom content</li>
+          <li>Clickable cards with URL support</li>
+          <li>Slot-based content architecture</li>
+          <li>Zero dependencies, pure Web Components</li>
+        </ul>
+      </div>
+
+      <h2>🎨 Card Types</h2>
+      <div class="grid">
+        <smart-card type="default" title="Default Card" subtitle="Beautiful gradient background" badge="New">
+          <p>This is the default card style with a purple gradient background. Perfect for general use cases.</p>
+          <div slot="footer">
+            <small>Default styling</small>
+          </div>
+        </smart-card>
+
+        <smart-card type="product" title="Product Card" subtitle="Perfect for e-commerce" image="https://images.pexels.com/photos/90946/pexels-photo-90946.jpeg?auto=compress&cs=tinysrgb&w=400">
+          <p>Showcase your products with this vibrant pink gradient design.</p>
+          <div slot="footer">
+            <strong>$29.99</strong>
+          </div>
+        </smart-card>
+
+        <smart-card type="profile" title="Sarah Johnson" subtitle="Senior Developer" image="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=400" badge="Online">
+          <p>Passionate about creating beautiful user experiences and clean code architecture.</p>
+          <div slot="footer">
+            <small>📍 San Francisco, CA</small>
+          </div>
+        </smart-card>
+
+        <smart-card type="article" title="Web Components Guide" subtitle="Learn modern web development" image="https://images.pexels.com/photos/11035380/pexels-photo-11035380.jpeg?auto=compress&cs=tinysrgb&w=400">
+          <p>A comprehensive guide to building reusable web components with modern JavaScript.</p>
+          <div slot="footer">
+            <small>5 min read • March 2024</small>
+          </div>
+        </smart-card>
+      </div>
+
+      <h2>🎯 Interactive Features</h2>
+      <div class="single-column">
+        <smart-card 
+          type="minimal" 
+          title="Clickable Card" 
+          subtitle="Click to visit GitHub" 
+          href="https://github.com"
+          elevation="3"
+          image="https://images.pexels.com/photos/11035471/pexels-photo-11035471.jpeg?auto=compress&cs=tinysrgb&w=400"
+        >
+          <p>This card is clickable and will open GitHub in a new tab. Notice the hover effects and cursor change.</p>
+          <div slot="footer">
+            <small>🔗 External link</small>
+          </div>
+        </smart-card>
+      </div>
+
+      <h2>⚙️ Elevation Levels</h2>
+      <div class="grid">
+        <smart-card type="minimal" title="Elevation 1" elevation="1">
+          <p>Subtle shadow for minimal depth.</p>
+        </smart-card>
+
+        <smart-card type="minimal" title="Elevation 3" elevation="3">
+          <p>Medium shadow for moderate depth.</p>
+        </smart-card>
+
+        <smart-card type="minimal" title="Elevation 5" elevation="5">
+          <p>Strong shadow for maximum depth.</p>
+        </smart-card>
+      </div>
+
+      <h2>📝 Usage Examples</h2>
+      
+      <h3>Basic Usage</h3>
+      <div class="code-block">
+&lt;script type="module" src="smart-card.js"&gt;&lt;/script&gt;
+
+&lt;smart-card title="My Card" subtitle="Card description"&gt;
+  &lt;p&gt;Your content here&lt;/p&gt;
+&lt;/smart-card&gt;
+      </div>
+
+      <h3>Advanced Usage</h3>
+      <div class="code-block">
+&lt;smart-card 
+  type="product"
+  title="Product Name"
+  subtitle="Product description"
+  image="image-url.jpg"
+  href="https://example.com"
+  badge="Sale"
+  elevation="3"
+&gt;
+  &lt;p&gt;Product details and description&lt;/p&gt;
+  &lt;div slot="footer"&gt;
+    &lt;strong&gt;$19.99&lt;/strong&gt;
+  &lt;/div&gt;
+&lt;/smart-card&gt;
+      </div>
+
+      <h3>Available Attributes</h3>
+      <div class="feature-list">
+        <ul>
+          <li><strong>type</strong>: default, product, profile, article, minimal</li>
+          <li><strong>title</strong>: Main heading text</li>
+          <li><strong>subtitle</strong>: Secondary text</li>
+          <li><strong>image</strong>: Image URL for the card</li>
+          <li><strong>href</strong>: Makes the card clickable</li>
+          <li><strong>badge</strong>: Small badge text in top-right corner</li>
+          <li><strong>elevation</strong>: Shadow depth (0-5)</li>
+        </ul>
+      </div>
+    </div>
   </body>
 </html>
