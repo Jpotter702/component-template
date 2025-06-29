@@ -138,9 +138,9 @@
         min-height: 200px;
       }
 
-      /* Fix: Constrain card width in demo sections */
+      /* Fix: Much smaller card width in demo sections */
       .snippet-demo smart-card {
-        max-width: 350px;
+        max-width: 280px;
         width: 100%;
       }
 
@@ -241,9 +241,9 @@
         margin-bottom: 20px;
       }
 
-      /* Fix: Constrain card width in playground preview */
+      /* Fix: Smaller card width in playground preview */
       .playground-preview smart-card {
-        max-width: 400px;
+        max-width: 320px;
         width: 100%;
       }
 
@@ -279,6 +279,7 @@
         font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
         margin: 20px 0;
         text-align: left;
+        font-size: 14px;
       }
 
       @media (max-width: 768px) {
@@ -306,10 +307,10 @@
           font-size: 2rem;
         }
 
-        /* Mobile: Allow cards to be slightly wider */
+        /* Mobile: Allow cards to be slightly wider but still constrained */
         .snippet-demo smart-card,
         .playground-preview smart-card {
-          max-width: 100%;
+          max-width: 300px;
         }
       }
     </style>
@@ -335,7 +336,7 @@
       <div class="quick-start">
         <h3>🚀 Quick Start</h3>
         <p>Add this script tag to your HTML to get started:</p>
-        <div class="quick-start-code"><script type="module" src="https://esm.sh/@jpotter702/smart-card@1.0.0"></script></div>
+        <div class="quick-start-code">&lt;script type="module" src="https://esm.sh/@jpotter702/smart-card@1.0.0"&gt;&lt;/script&gt;</div>
       </div>
 
       <!-- Basic Card Snippet -->
@@ -358,9 +359,9 @@
               <span>HTML</span>
               <button class="copy-btn" onclick="copyCode(this, 'basic-card')">Copy</button>
             </div>
-            <pre class="code-content" id="basic-card"><smart-card title="Hello World" subtitle="Your first smart card">
-  <p>This is a basic smart card with minimal configuration.</p>
-</smart-card></pre>
+            <pre class="code-content" id="basic-card">&lt;smart-card title="Hello World" subtitle="Your first smart card"&gt;
+  &lt;p&gt;This is a basic smart card with minimal configuration.&lt;/p&gt;
+&lt;/smart-card&gt;</pre>
           </div>
         </div>
       </div>
@@ -395,19 +396,19 @@
               <span>HTML</span>
               <button class="copy-btn" onclick="copyCode(this, 'product-card')">Copy</button>
             </div>
-            <pre class="code-content" id="product-card"><smart-card 
+            <pre class="code-content" id="product-card">&lt;smart-card 
   type="product" 
   title="Wireless Headphones" 
   subtitle="Premium Audio Experience" 
   image="https://images.pexels.com/photos/3394650/pexels-photo-3394650.jpeg?auto=compress&cs=tinysrgb&w=400"
   badge="Best Seller"
   elevation="3"
->
-  <p>High-quality wireless headphones with noise cancellation and 30-hour battery life.</p>
-  <div slot="footer">
-    <strong style="color: #e74c3c;">$129.99</strong> <del style="color: #95a5a6;">$179.99</del>
-  </div>
-</smart-card></pre>
+&gt;
+  &lt;p&gt;High-quality wireless headphones with noise cancellation and 30-hour battery life.&lt;/p&gt;
+  &lt;div slot="footer"&gt;
+    &lt;strong style="color: #e74c3c;"&gt;$129.99&lt;/strong&gt; &lt;del style="color: #95a5a6;"&gt;$179.99&lt;/del&gt;
+  &lt;/div&gt;
+&lt;/smart-card&gt;</pre>
           </div>
         </div>
       </div>
@@ -441,18 +442,18 @@
               <span>HTML</span>
               <button class="copy-btn" onclick="copyCode(this, 'profile-card')">Copy</button>
             </div>
-            <pre class="code-content" id="profile-card"><smart-card 
+            <pre class="code-content" id="profile-card">&lt;smart-card 
   type="profile" 
   title="Alex Chen" 
   subtitle="Lead UX Designer" 
   image="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400"
   badge="Available"
->
-  <p>Passionate about creating intuitive user experiences and leading design teams to success.</p>
-  <div slot="footer">
-    <small>📍 New York, NY • 🔗 <a href="#" style="color: inherit;">Portfolio</a></small>
-  </div>
-</smart-card></pre>
+&gt;
+  &lt;p&gt;Passionate about creating intuitive user experiences and leading design teams to success.&lt;/p&gt;
+  &lt;div slot="footer"&gt;
+    &lt;small&gt;📍 New York, NY • 🔗 &lt;a href="#" style="color: inherit;"&gt;Portfolio&lt;/a&gt;&lt;/small&gt;
+  &lt;/div&gt;
+&lt;/smart-card&gt;</pre>
           </div>
         </div>
       </div>
@@ -486,18 +487,18 @@
               <span>HTML</span>
               <button class="copy-btn" onclick="copyCode(this, 'article-card')">Copy</button>
             </div>
-            <pre class="code-content" id="article-card"><smart-card 
+            <pre class="code-content" id="article-card">&lt;smart-card 
   type="article" 
   title="10 Web Design Trends for 2024" 
   subtitle="Stay ahead with modern design" 
   image="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=400"
   href="https://example.com/article"
->
-  <p>Discover the latest web design trends that will shape the digital landscape in 2024.</p>
-  <div slot="footer">
-    <small>8 min read • Design • March 15, 2024</small>
-  </div>
-</smart-card></pre>
+&gt;
+  &lt;p&gt;Discover the latest web design trends that will shape the digital landscape in 2024.&lt;/p&gt;
+  &lt;div slot="footer"&gt;
+    &lt;small&gt;8 min read • Design • March 15, 2024&lt;/small&gt;
+  &lt;/div&gt;
+&lt;/smart-card&gt;</pre>
           </div>
         </div>
       </div>
@@ -531,18 +532,18 @@
               <span>HTML</span>
               <button class="copy-btn" onclick="copyCode(this, 'notification-card')">Copy</button>
             </div>
-            <pre class="code-content" id="notification-card"><smart-card 
+            <pre class="code-content" id="notification-card">&lt;smart-card 
   type="minimal" 
   title="System Update Available" 
   subtitle="Version 2.1.0 is ready to install" 
   badge="New"
   elevation="1"
->
-  <p>This update includes performance improvements and bug fixes.</p>
-  <div slot="footer">
-    <button style="background: #667eea; color: white; border: none; padding: 8px 16px; border-radius: 6px; cursor: pointer;">Update Now</button>
-  </div>
-</smart-card></pre>
+&gt;
+  &lt;p&gt;This update includes performance improvements and bug fixes.&lt;/p&gt;
+  &lt;div slot="footer"&gt;
+    &lt;button style="background: #667eea; color: white; border: none; padding: 8px 16px; border-radius: 6px; cursor: pointer;"&gt;Update Now&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/smart-card&gt;</pre>
           </div>
         </div>
       </div>
