@@ -1,5 +1,5 @@
 {
-  "name": "@daviddarnes/smart-card",
+  "name": "@jpotter702/smart-card",
   "version": "1.0.0",
   "description": "A versatile, beautiful Web Component for creating interactive cards with multiple styles and features",
   "main": "smart-card.js",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/daviddarnes/smart-card.git"
+    "url": "git+https://github.com/Jpotter702/component-template.git"
   },
   "keywords": [
     "web",
@@ -30,14 +30,14 @@
     "access": "public"
   },
   "bugs": {
-    "url": "https://github.com/daviddarnes/smart-card/issues"
+    "url": "https://github.com/Jpotter702/component-template/issues"
   },
   "author": {
     "name": "David Darnes",
     "email": "me@daviddarnes.com",
     "url": "https://darn.es/"
   },
-  "homepage": "https://github.com/daviddarnes/smart-card#readme",
+  "homepage": "https://github.com/Jpotter702/component-template#readme",
   "devDependencies": {
     "vite": "^5.0.0"
   }

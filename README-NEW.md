@@ -2,7 +2,7 @@
 
 > A modern, versatile Web Component for creating beautiful interactive cards with multiple styles and smooth animations.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/~/github.com/daviddarnes/smart-card)
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/~/github.com/Jpotter702/component-template)
 
 ## ✨ Features
 
@@ -24,8 +24,8 @@
 
 ```bash
 # Clone the repository
-git clone https://github.com/daviddarnes/smart-card.git
-cd smart-card
+git clone https://github.com/Jpotter702/component-template.git
+cd component-template
 
 # Install dependencies
 npm install
@@ -50,16 +50,16 @@ Choose your preferred installation method:
 
 ### NPM
 ```bash
-npm install @daviddarnes/smart-card
+npm install @jpotter702/smart-card
 ```
 
 ### CDN (ESM)
 ```html
-<script type="module" src="https://esm.sh/@daviddarnes/smart-card@1.0.0"></script>
+<script type="module" src="https://esm.sh/@jpotter702/smart-card@1.0.0"></script>
 ```
 
 ### Direct Download
-Download `smart-card.js` from the [releases page](https://github.com/daviddarnes/smart-card/releases)
+Download `smart-card.js` from the [releases page](https://github.com/Jpotter702/component-template/releases)
 
 ## 🎨 Card Types & Examples
 
@@ -236,7 +236,7 @@ Works in all modern browsers that support:
 
 ### Project Structure
 ```
-smart-card/
+component-template/
 ├── smart-card.js          # Main Web Component
 ├── index.html            # Demo page
 ├── demo.html            # Original demo (legacy)
@@ -269,9 +269,9 @@ MIT License - see [LICENSE](LICENSE) file for details.
 
 ## 🔗 Links
 
-- [GitHub Repository](https://github.com/daviddarnes/smart-card)
-- [NPM Package](https://www.npmjs.com/package/@daviddarnes/smart-card)
-- [Live Demo](https://daviddarnes.github.io/smart-card/)
+- [GitHub Repository](https://github.com/Jpotter702/component-template)
+- [NPM Package](https://www.npmjs.com/package/@jpotter702/smart-card)
+- [Live Demo](https://jpotter702.github.io/component-template/)
 - [Author Website](https://darn.es/)
 
 ---

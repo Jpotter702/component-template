@@ -2,9 +2,9 @@
 
 A versatile, beautiful Web Component for creating interactive cards with multiple styles and features.
 
-**[Demo](https://daviddarnes.github.io/smart-card/demo.html)** | **[Further reading](https://darn.es/web-component-github-starter-template/)**
+**[Demo](https://jpotter702.github.io/component-template/demo.html)** | **[Further reading](https://darn.es/web-component-github-starter-template/)**
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/~/github.com/daviddarnes/smart-card?file=smart-card.js&initialPath=/demo.html)
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/~/github.com/Jpotter702/component-template?file=smart-card.js&initialPath=/demo.html)
 
 ## ✨ Features
 
@@ -119,8 +119,8 @@ smart-card {
 
 You have a few options (choose one of these):
 
-1. Install via [npm](https://www.npmjs.com/package/@daviddarnes/smart-card): `npm install @daviddarnes/smart-card`
-1. [Download the source manually from GitHub](https://github.com/daviddarnes/smart-card/releases) into your project.
+1. Install via [npm](https://www.npmjs.com/package/@jpotter702/smart-card): `npm install @jpotter702/smart-card`
+1. [Download the source manually from GitHub](https://github.com/Jpotter702/component-template/releases) into your project.
 1. Skip this step and use the script directly via a 3rd party CDN (not recommended for production use)
 
 ### Usage
@@ -136,7 +136,7 @@ Make sure you include the `<script>` in your project (choose one of these):
 <!-- 3rd party CDN, not recommended for production use -->
 <script
   type="module"
-  src="https://www.unpkg.com/@daviddarnes/smart-card@1.0.0/smart-card.js"
+  src="https://www.unpkg.com/@jpotter702/smart-card@1.0.0/smart-card.js"
 ></script>
 ```
 
@@ -144,7 +144,7 @@ Make sure you include the `<script>` in your project (choose one of these):
 <!-- 3rd party CDN, not recommended for production use -->
 <script
   type="module"
-  src="https://esm.sh/@daviddarnes/smart-card@1.0.0"
+  src="https://esm.sh/@jpotter702/smart-card@1.0.0"
 ></script>
 ```
 
